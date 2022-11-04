@@ -14,6 +14,7 @@ DB += gmb.db
 
 DB_INSTALLS += $(AUTOSAVE)/db/save_restoreStatus.db
 DB_INSTALLS += $(IOCADMIN)/db/iocSoft.db
+DB_INSTALLS += $(ASYN)/db/asynRecord.db
 
 #----------------------------------------------------
 # Create and install (or just install)

@@ -48,7 +48,7 @@ dbLoadRecords( "db/iocSoft.db",            "IOC=$(IOC_PV)" )
 dbLoadRecords( "db/save_restoreStatus.db", "P=$(IOC_PV):" )
 $$LOOP(GMB)
 dbLoadRecords( "db/gmb.db",       "DEV=$$BASE,N=$$(INDEX)" )
-#dbLoadRecords( "db/asynRecord.db", "Dev=$$BASE, PORT=GMB$$INDEX")
+dbLoadRecords( "db/asynRecord.db", "P=$$BASE:,R=asyn,PORT=GMB$$INDEX")
 $$ENDLOOP(GMB)
 
 # Setup autosave
