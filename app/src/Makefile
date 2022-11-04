@@ -9,32 +9,32 @@ include $(TOP)/configure/CONFIG
 # Build an ioc application
 # Use PROD_IOC_RTEMS for RTEMS only
 # Use PROD_IOC_Linux for Linux only
-PROD_IOC_Linux = setra
+PROD_IOC_Linux = gmb
 
-# setra.dbd will be created and installed
-DBD += setra.dbd
+# gmb.dbd will be created and installed
+DBD += gmb.dbd
 
-setra_DBD += base.dbd
-setra_DBD += iocAdmin.dbd
-setra_DBD += asSupport.dbd
-setra_DBD += asyn.dbd
-setra_DBD += modbus.dbd
-setra_DBD += modbusSupport.dbd
-setra_DBD += caPutLog.dbd
+gmb_DBD += base.dbd
+gmb_DBD += iocAdmin.dbd
+gmb_DBD += asSupport.dbd
+gmb_DBD += asyn.dbd
+gmb_DBD += modbus.dbd
+gmb_DBD += modbusSupport.dbd
+gmb_DBD += caPutLog.dbd
 
 # <name>_registerRecordDeviceDriver.cpp will be created from <name>.dbd
-setra_SRCS += setra_registerRecordDeviceDriver.cpp
-setra_SRCS_DEFAULT += setraMain.cpp
+gmb_SRCS += gmb_registerRecordDeviceDriver.cpp
+gmb_SRCS_DEFAULT += gmbMain.cpp
 
 # Add locally compiled object code
-#setra_SRCS += dbSubExample.c
+#gmb_SRCS += dbSubExample.c
 
-setra_LIBS += autosave
-setra_LIBS += devIocStats
-setra_LIBS += modbus
-setra_LIBS += caPutLog
-setra_LIBS += asyn
-setra_LIBS += $(EPICS_BASE_IOC_LIBS)
+gmb_LIBS += autosave
+gmb_LIBS += devIocStats
+gmb_LIBS += modbus
+gmb_LIBS += caPutLog
+gmb_LIBS += asyn
+gmb_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 #===========================
 

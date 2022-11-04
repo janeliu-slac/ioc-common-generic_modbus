@@ -6,7 +6,7 @@ file autosave_iocAdmin.tpl-req
 	}
 }
 
-file setra.tpl-req
+file gmb.tpl-req
 {
     { BASE=$(BASE) }
 }

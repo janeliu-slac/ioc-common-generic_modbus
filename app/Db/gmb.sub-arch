@@ -18,7 +18,7 @@ file archive_SR.tpl-arch
 	}
 }
 
-file setra.tpl-arch
+file gmb.tpl-arch
 {
     { BASE = $(BASE) }
 }

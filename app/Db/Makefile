@@ -10,7 +10,7 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install)
 # databases, templates, substitutions like this
-DB += setra.db
+DB += gmb.db
 
 DB_INSTALLS += $(AUTOSAVE)/db/save_restoreStatus.db
 DB_INSTALLS += $(IOCADMIN)/db/iocSoft.db
@@ -19,14 +19,14 @@ DB_INSTALLS += $(IOCADMIN)/db/iocSoft.db
 # Create and install (or just install)
 # Archive files, templates, substitutions like this
 #
-ARCHIVE += setra.archive
+ARCHIVE += gmb.archive
 
 #----------------------------------------------------
 # Create and install (or just install)
 # Autosave request files, templates, substitutions like this
 #
 
-REQ += setra.req
+REQ += gmb.req
 
 include $(TOP)/configure/RULES
 #----------------------------------------

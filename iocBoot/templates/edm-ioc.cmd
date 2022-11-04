@@ -12,13 +12,4 @@ if [ -f    ${SETUP_SITE_TOP}/epicsenv-cur.sh ]; then
 	source ${SETUP_SITE_TOP}/epicsenv-cur.sh
 fi
 
-$$LOOP(SETRA)
-export IOC_PV=$$IOC_PV
-export BASE=$$BASE
-
-pushd $$IOCTOP
-edm -x -eolc	\
-	-m "IOC=${IOC_PV}"		\
-        -m "BASE=${BASE}"               \
-	setraScreens/setra.edl &
-$$ENDLOOP(SETRA)
+echo "No screen yet!"
