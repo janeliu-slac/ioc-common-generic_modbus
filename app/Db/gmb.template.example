@@ -1,0 +1,15 @@
+# Example record for Generic Modbus Device
+# This is a reference template showing how to define a modbus record.
+# Copy and adapt these records into gmb.template as needed.
+#
+# Macros:
+#     DEV    - PV basename
+#     N      - Device index
+#     OFFSET - Register offset within the modbus region
+
+record(longin, $(DEV):NUM_CHANNELS)
+{
+        field(DTYP, "asynInt32")
+        field(INP,  "@asyn(GMB$(N)_region,$(OFFSET))UINT16")
+        field(SCAN, "5 second")
+}

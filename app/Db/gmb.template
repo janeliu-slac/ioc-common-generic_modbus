@@ -1,11 +1,5 @@
 # Records for Generic Modbus Device
+# See gmb.template.example for example record definitions.
 # Macros:
 #     DEV - PV basename
 #     N   - Device index
-
-#record(longin, $(DEV):NUM_CHANNELS)
-#{       
-#        field(DTYP, "asynInt32")
-#        field(INP,  "@asyn(GMB$(N)_region,$(OFFSET))UINT16")
-#        field(SCAN, "5 second")
-#}
