@@ -1,5 +1,4 @@
 # Records for Generic Modbus Device
-# See gmb.template.example for example record definitions.
 # Macros:
 #     DEV - PV basename
 #     N   - Device index
